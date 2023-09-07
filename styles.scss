@@ -1,0 +1,46 @@
+@import 'vars';
+
+body {
+    position: relative;
+
+    main {
+        z-index: 0;
+
+        &:before {
+            content: "";
+            background-image: url(hero-bg.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: fixed;
+            left: 0;
+            z-index: -1;
+            width: 100vw;
+            height: 90vh;
+            filter: brightness(.5);
+        }
+
+        #header {
+            font-size: 120px;
+
+            span {
+                color: $purple;
+            }
+        }
+
+        #sub {
+            font-size: 60px;
+        }
+
+        #learn {
+            border: none;
+            background-color: $purple;
+            border-radius: 50px;
+            color: white;
+        }
+    }
+
+    nav {
+        padding: 0 10vw 0 10vw;
+    }
+}
