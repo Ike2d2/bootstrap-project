@@ -1,5 +1,6 @@
 body {
   position: relative;
+  font-family: "Roboto", sans-serif;
 }
 body main {
   z-index: 0;
@@ -20,8 +21,12 @@ body main:before {
 body main #header {
   font-size: 120px;
 }
-body main #header span {
+body main #header .bracket {
   color: #8b37ff;
+  font-weight: 700;
+}
+body main #header #dev {
+  font-family: "Montserrat", sans-serif;
 }
 body main #sub {
   font-size: 60px;
