@@ -6,6 +6,8 @@ body {
 
     main {
         z-index: 0;
+        height: 90%;
+        position: relative;
 
         &:before {
             content: "";
@@ -13,7 +15,7 @@ body {
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-            position: fixed;
+            position: absolute;
             left: 0;
             z-index: -1;
             width: 100vw;
@@ -21,32 +23,32 @@ body {
             filter: brightness(.5);
         }
 
-        #header {
-            font-size: 120px;
+        #headerRow {
+            #header {
+                .bracket {
+                    color: $purple;
+                    font-weight: 700;
+                }
 
-            .bracket {
-                color: $purple;
-                font-weight: 700;
-            }
-
-            #dev {
-                font-family: 'Montserrat', sans-serif;
+                #dev {
+                    font-family: 'Montserrat', sans-serif;
+                }
             }
         }
 
-        #sub {
-            font-size: 60px;
-        }
+        #sub {}
 
         #learn {
             border: none;
             background-color: $purple;
-            border-radius: 50px;
+            border-radius: 9999px;
             color: white;
+            text-decoration: none;
         }
     }
 
     nav {
+        height: 10%;
         padding: 0 10vw 0 10vw;
     }
 }

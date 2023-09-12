@@ -4,6 +4,8 @@ body {
 }
 body main {
   z-index: 0;
+  height: 90%;
+  position: relative;
 }
 body main:before {
   content: "";
@@ -11,32 +13,28 @@ body main:before {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: fixed;
+  position: absolute;
   left: 0;
   z-index: -1;
   width: 100vw;
   height: 90vh;
   filter: brightness(0.5);
 }
-body main #header {
-  font-size: 120px;
-}
-body main #header .bracket {
+body main #headerRow #header .bracket {
   color: #8b37ff;
   font-weight: 700;
 }
-body main #header #dev {
+body main #headerRow #header #dev {
   font-family: "Montserrat", sans-serif;
-}
-body main #sub {
-  font-size: 60px;
 }
 body main #learn {
   border: none;
   background-color: #8b37ff;
-  border-radius: 50px;
+  border-radius: 9999px;
   color: white;
+  text-decoration: none;
 }
 body nav {
+  height: 10%;
   padding: 0 10vw 0 10vw;
 }/*# sourceMappingURL=styles.css.map */
